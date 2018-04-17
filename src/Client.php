@@ -73,4 +73,53 @@ class Client
     {
         return $this->makeRequest(self::ENDPOINT . '/' . $businessUnitId . '/reviews', $optionalParams);
     }
+
+    /**
+     * @param string $businessUnitId
+     * @param string $locale (de-DE)
+     * @return array
+     */
+    public function getWeblinks($businessUnitId, array $optionalParams = [])
+    {
+        return $this->makeRequest(self::ENDPOINT . '/' . $businessUnitId . '/web-links', $optionalParams);
+    }
+
+
+    /**
+     * @param string $stars
+     * @return array
+     */
+    public function getStars($stars, array $optionalParams = [])
+    {
+        return $this->makeRequest(self::RESOURCES . '/images/stars/' . $stars, $optionalParams);
+    }
+
+    /**
+     * @param string $stars
+     * @param string $locale (de-DE)
+     * @return array
+     */
+    public function getStarsString($stars, array $optionalParams = [])
+    {
+        return $this->makeRequest(self::RESOURCES . '/strings/stars/' . $stars, $optionalParams);
+    }
+
+
+    /**
+     * @return array
+    */
+    public function getLogos(array $optionalParams = [])
+    {
+        return $this->makeRequest(self::RESOURCES . '/images/logos', $optionalParams);
+    }    
+
+    /**
+     * @return array
+    */
+    public function getIcons(array $optionalParams = [])
+    {
+        return $this->makeRequest(self::RESOURCES . '/images/icons', $optionalParams);
+    }     
+    
+    
 }
