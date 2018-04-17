@@ -86,6 +86,7 @@ class Client
 
 
     /**
+     * Get the stars
      * @param string $stars
      * @return array
      */
