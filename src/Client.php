@@ -8,6 +8,7 @@ use GuzzleHttp\ClientInterface as GuzzleClientInterface;
 class Client
 {
     const ENDPOINT = 'https://api.trustpilot.com/v1/business-units';
+    const RESOURCES = 'https://api.trustpilot.com/v1/resources';
 
     /**
      * @var string
