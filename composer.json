@@ -1,6 +1,6 @@
 {
     "name": "moneymaxim/trustpilot-business-unit-api",
-    "description": "PHP integration with the Trustpilot Business Unit API",
+    "description": "PHP integration with the Trustpilot Business Unit API Laravel 8",
     "require": {
         "php": "^7.3",
         "guzzlehttp/guzzle": "^7.0.1",
