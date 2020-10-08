@@ -3,7 +3,7 @@
     "description": "PHP integration with the Trustpilot Business Unit API",
     "require": {
         "php": "^7.3",
-        "guzzlehttp/guzzle": "^7.0.1",
+        "guzzlehttp/guzzle": "^6.0|^7.0",
         "moneymaxim/trustpilot-authenticator": "^0.1.1"
     },
     "license": "MIT",
